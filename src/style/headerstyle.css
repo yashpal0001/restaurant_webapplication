@@ -1,0 +1,262 @@
+.logo{
+height: 70px;
+width: auto;
+
+}
+
+header.navbar{
+/* position: absolute; */
+position: fixed;
+width: 100%;
+background: transparent;
+z-index: 1000;
+}
+
+
+header.navbar.sticky{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color:grey;
+    -webkit-transition: all 15ms ease-in-out;
+    -moz-transition: all 15ms ease-in-out;
+    -o-transition: all 15ms ease-in-out;
+    -ms-transition:all 15ms ease-in-out;
+    transition: all 15ms ease-in-out;
+    animation-name: stickyTransition;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-fill-mode: both;
+    -webkit-box-shadow: 0 2px 3px rgba(96,96, 96, 0.1);
+    -moz-box-shadow:0 2px 3px rgba(96,96, 96, 0.1);
+    box-shadow: 0 2px 3px rgba(96,96, 96, 0.1);
+}
+
+
+@keyframes stickyTransition{
+0%{
+    opacity:0 ;
+    -webkit-transform: translate3d(1,-100%,0);
+    transform: translate3d(1,-100%,0);
+}
+
+100%{
+    opacity:0 ;
+    -webkit-transform: none;
+    transform:  none;
+}
+}
+
+
+/* 
+header.logo .img{
+    width: auto;
+    max-width: inherit;
+    max-height: 40px;
+} */
+
+
+header .nav-link{
+    display: inline-flex;
+    justify-content: center;
+    color:b;
+    padding: 0 1rem  !important;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: var(--oswald-font);
+    text-transform: uppercase;
+    transition: all 15ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 15ms ease-in-out ;
+    -o-transition:  all 15ms ease-in-out;
+    -ms-transition: all 15ms ease-in-out;
+
+}
+
+header .sticky .nav-link{
+color: gray;
+
+}
+
+header .nav-link:hover{
+ color:gold;
+}
+
+header .cart{
+    position: relative;
+    top: -0.4375rem;
+}
+
+
+header .roundpoint{
+    height: 16px;
+    width: 16px;
+    background: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 11.2px;
+    line-height: 16px;
+    text-align: center;
+    font-style: normal;
+    position: absolute;
+    top: 3.2px;
+    right: -8px;
+}
+
+/* media query */
+@media (max-width:992px){
+    header.navbar{
+        background-color: white ;
+    }
+
+    header .navbar-toggler{
+        border: none;
+    }
+
+    header .navbar-toggler:focus{
+        outline: none;
+        box-shadow: none;
+    }
+
+    header .navbar-toggler-icon{
+        width: 2.5rem;
+        height: 2.5rem;
+
+    }
+
+    header .nav-link {
+      color: black;
+      padding: 1rem !important;
+
+    }
+}
+
+
+/* home menu */
+
+.menu_section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.menu_section .card-img-top{
+    transition: all 500ms ease-in-out;
+}
+
+.menu_section h2 {
+    font-size: 3.5rem;
+    color: red;
+}
+
+.menu_section .para{
+    color: grey;
+    padding: 10px 100px;
+    font-size: 19px;
+}
+
+.menu_section .item_rating i{
+    color: rgb(255, 119, 0);
+    padding-right: 5px;
+}
+
+.menu_section .wishlist i{
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu_section .wishlist i:hover{
+    color: red;
+}
+
+.menu_section .card-title{
+    font-family: var(--oswald-font);
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.menu_section .card-text{
+    color: grey;
+    font-size: 15px;
+}
+
+.menu_section .menu_price{
+    background-color: burlywood;
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 4px;
+}
+
+.menu_section .add_to_card a{
+    background:red;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateY(100px);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.menu_section .card:hover .card-img-top{
+    transform: scale(1.1);
+}
+
+.menu_section .card:hover .add_to_card a{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.menu_section .ads_box{
+    text-align: left;
+    padding: 140px 80px 150px 50px;
+    border-radius: 6px;
+        }
+
+.menu_section .ads_img1{
+    background: url( "../assests/images/homepage/banner1.jpg");
+}
+ 
+
+.menu_section .ads_img{
+    background: url( "../assests/images/homepage/banner1.jpg");
+}
+ 
+
+
+/* 
+dashboard */
+
+
+
+
+
+
+
+/* dashboard */
+.custom-offcanvas{
+
+    padding: 10px;
+    align-items: center;
+}
+
+.custom-heading{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   /* font-size: x-large; */
+     height: 50px;
+
+}
+
+.links{
+
+    padding: 50px;
+}

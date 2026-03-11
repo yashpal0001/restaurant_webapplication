@@ -1,0 +1,88 @@
+.outer {
+ background:url("../assests/background.png"); 
+ /* background: navy; */
+  font-family: Arial, sans-serif;
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.inner{
+    text-align: center;
+    padding-top: 50px;
+    text-shadow: black;  
+   }
+
+.mid{
+    height:500px ;
+    min-height: 440px;
+    width: 90%;
+    max-width: 500px;  
+    background-color: whitesmoke; 
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.inputid{
+   height: 40px;
+    width: 90%;
+    border-radius: 10px;
+        font-size: large;
+   
+    }
+
+
+.logo_login{
+     
+      justify-content: center; 
+    align-items: center;
+    height: auto;
+    width: 240px;
+    max-width: 80%;
+    margin-bottom: 20px;
+     }
+
+.head_logo{
+
+     height: auto;
+    width: 240px;
+    max-width: 80%;
+}
+
+.button{
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.head{
+      font-family: initial;
+}
+
+.bighead{
+    font-family: ui-monospace;
+   
+    }
+
+.mid:hover{
+    color:brown;
+}
+
+
+
+.button:hover{
+    color: whitesmoke;
+    background-color: brown;
+}
+
+.forgot{
+  color: navy;
+}
