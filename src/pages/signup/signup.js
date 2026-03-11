@@ -18,7 +18,7 @@ function Signup() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/signup", {
+      const response = await fetch("loginsignup001-gexy8rylo-yashpal0001s-projects.vercel.app/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
