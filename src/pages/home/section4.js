@@ -11,7 +11,7 @@ function Section4(){
         <Container>
            <Row>
              <Col lg={6} className="text-center mb-5 mb-lg-0">
-                 <img/>
+                 
              </Col>
               <Col lg={6} className="px-5">
               
